@@ -1,0 +1,61 @@
+body{
+    background-image: url(flappy-bird.gif);
+    background-size:cover;
+    background-repeat: repeat;
+    height: 100vh;
+    
+  }
+  
+  .brid{
+    width: 200px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    /* forwards */
+    animation: birdAnim 6s infinite;
+    /* animation-timing-function: linear; */
+  }
+  .brid img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnim{
+    0%{
+      top: 0%;
+      left: 0%;
+      transform: rotate(15deg);
+    }
+    20%{
+        top: 25%;
+        left: 50%;
+        transform: rotate(-15deg);
+    }
+    40%{
+      top: 50%;
+      transform: rotate(15deg);
+    }
+    60%{
+        top: 50%;
+    }
+    80%{
+      top: 25%;
+      transform: rotate(-15deg);
+      transform: rotate(0deg);
+    }
+    100%{
+        top: 50%;
+        transform: rotate(15deg); 
+        transform: rotate(7deg);
+    }
+    80%{
+        top: 25%;
+        transform: rotate(-15deg);
+        transform: rotate(-7deg);
+      }
+      100%{
+        top: 50%;
+        transform: rotate(15deg); 
+        transform: rotate(7deg);
+    }
+    
+  }
